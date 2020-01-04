@@ -1,0 +1,24 @@
+﻿body {
+     
+}
+.header {
+    
+    height: 120px;
+    background-color: cyan;
+}
+#mediaMenu {
+   
+    height: 720px;
+}
+.section{
+    background-color:coral;
+}
+.aside{
+    background-color:bisque;
+}
+.footer {
+    position: absolute;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 60px;
+}
