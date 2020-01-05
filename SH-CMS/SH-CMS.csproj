@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\admin\" />
+    <Folder Include="wwwroot\css\Home\" />
   </ItemGroup>
 
 </Project>
