@@ -1,21 +1,65 @@
-﻿body {
-     
+﻿.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
 }
-.header {
-    
-    height: 120px;
-    background-color: cyan;
+
+
+/*默认移动CSS代码*/
+
+.jumbotron {
+    color: #ccc;
+    background-image: url("../img/bg.jpg");
+    margin-top: 50px;
 }
+
+.jumbotron h1 {
+    font-size: 26px;
+    padding-left: 20px;
+}
+
+.jumbotron h4 {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+
+/* 小屏幕（平板，大于等于768px） */
+
+@media (min-width: 768px) {
+    .jumbotron h1 {
+        font-size: 26px;
+    }
+    .jumbotron h4 {
+        font-size: 15px;
+    }
+}
+
+
+/* 中等屏幕（桌面显示器，大于等于992px） */
+
+@media (min-width: 992px) {
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+    .jumbotron h4 {
+        font-size: 18px;
+    }
+}
+
 #mediaMenu {
-   
     height: 720px;
 }
-.section{
-    background-color:coral;
+
+.section {
+    background-color: coral;
 }
-.aside{
-    background-color:bisque;
+
+.aside {
+    background-color: bisque;
 }
+
 .footer {
     position: absolute;
     text-align: center;

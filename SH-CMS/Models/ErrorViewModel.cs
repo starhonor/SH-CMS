@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SH_CMS.Models
+﻿namespace SH_CMS.Models
 {
     public class ErrorViewModel
     {

@@ -20,40 +20,58 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <nav>
-
-                    </nav>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                 <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" style="max-width:200px;margin-top:-15px;" img src="~/img/brand.png">
+                    </a>
                 </div>
-                
+                <div class="collapse navbar-collapse " id="example-navbar-collapse">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="active"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">首页</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="NetLearning">.NET相关</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="IndustrialDesign">工业设计</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RobotTech">机器人技术</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CNCAnd3Dprinter">CNC和3D打印机</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="IntelControl">智能控制</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AGVmotor">AGV</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                其它<b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">PYTHON</a></li>
+                                <li><a href="#">JAVA</a></li>
+                                <li><a href="#">PHP</a></li>
+                                <li><a href="#">other</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">bootstrap</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <div class="container">
-        <div class="row" id="mediaMenu">
-            <div class="col-sx-12 col-sm-8 col-md-8 col-lg-9" >
-                <section>
-                    <div class="container">
-                        <main role="main" class="pb-3">
-                            @RenderBody()
-                        </main>
-                    </div>
-                </section>
-            </div>
-            <div class="col-sx-12 col-sm-4 col-md-4 col-lg-3">
-                <aside>
-                    <div>
-
-                    </div>
-                </aside>
-            </div>
-        </div>  
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+           
+        </div>
     </div>
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - 忘临川科技小站 -版权所有-
+            &copy; 2020 - 忘临川科技小站 -版权所有-<a href = "mailto:491192550@qq.com">联系作者</a>-
             <a asp-area="" asp-controller="Home" asp-action="Privacy">相关隐私条款</a>
         </div>
     </footer>

@@ -2,6 +2,54 @@
 @{
     ViewData["Title"] = "Index";
 }
+<section>
+        <div id="LayoutCarousel" class="carousel slide">
+        <!-- 轮播（Carousel）指标 ，本次设置3个-->
+            <ol class="carousel-indicators">
+             <li data-target="LayoutCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="LayoutCarousel" data-slide-to="1"></li>
+             <li data-target="#LayoutCarousel" data-slide-to="2"></li>
+           </ol>   
+         <!-- 轮播（Carousel）项目 图片统一使用960px*360px  -->
+         <div class="container-fluid">
+         <div class="carousel-inner">
+           <div class="item active">
+            <hgroup>              
+                     <img src="~/img/carousel001.jpg" alt="......"> 
+                     <h1>简易开源硬件3D打印机,采用42步进电机+arduino开发板配置</h1>
+                     <p>......</p>
+                     <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>        
+             </hgroup>                             
+            </div>
+           <div class="item">                
+                     <img src="~/img/carousel002.jpg" alt="......"> 
+                     <h1>罗马柱头，适用于CNC程序制作和完善产品样本库</h1>
+                     <p>......</p>
+                     <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
 
-<h2>Index</h2>
-
+           </div>
+           <div class="item">
+                    <img src="~/img/carousel003.jpg" alt="......"> 
+                    <h1>机器人CNC加工系统，采用KUKA kr300-2700带回转盘配置 </h1>
+                    <p>......</p>
+                    <p><a class="btn btn-primary btn-lg" href="#" role="button">了解更多</a></p>
+           </div>
+        </div>
+    <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#LayoutCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">前一页</span>
+        </a>
+        <a class="right carousel-control" href="#LayoutCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">后一页t</span>
+        </a>
+</div> 
+<script>
+$(function(){
+    $('#LayoutCarouse').on('slide.bs.carousel', function () {
+        alert("当调用 slide 实例方法时立即触发该事件。");
+    });
+});
+</script>
+</section>
