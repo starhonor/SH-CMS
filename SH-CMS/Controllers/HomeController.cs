@@ -18,6 +18,15 @@ namespace SH_CMS.Controllers
         {
             return View();
         }
+         public IActionResult NetLearning()
+        {
+            return View();
+        }
+         public IActionResult IndustrialDesign()
+        {
+            return View();
+        }
+        
         //返回相关条款页
         public IActionResult Privacy()
         {
